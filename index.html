@@ -8,15 +8,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- METADADES GEO 1: ProfessionalService (Injecció Semàntica per a IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "OmniversRol",
+      "image": "https://omniversrol.com/logo.png",
+      "@id": "https://omniversrol.com/#organization",
+      "url": "https://omniversrol.com",
+      "telephone": "",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sant Feliu de Llobregat",
+        "addressRegion": "Catalunya",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.3833,
+        "longitude": 2.0500
+      },
+      "inLanguage": "ca",
+      "description": "Joc experiencial de rol, exploració i transformació per observar la realitat des de noves perspectives."
+    }
+    </script>
+
+    <!-- METADADES GEO 2: FAQPage Conversacional -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es OmniversRol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OmniversRol es un juego experiencial de exploración y transformación. Un espacio para mirar una misma realidad desde diferentes perspectivas, entrar en nuevos roles y descubrir qué ocurre cuando cambias la mirada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son los 4 Elementos de OmniversRol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los cuatro elementos son: El Chakra (define el territorio), La Creencia (define la puerta), El Rol (define la perspectiva) y La Llave (define la transformación)."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- METADADES GEO 3: SpeakableSpecification (Assistents de Veu) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "OmniversRol",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".tagline", ".main-title", ".quote"]
+      },
+      "url": "https://omniversrol.com"
+    }
+    </script>
 </head>
 <body>
 
-    <!-- BOTÓN SUPERIOR -->
+    <!-- BOTÓ SUPERIOR ÀREA PRIVADA -->
     <div class="top-bar">
         <a href="https://portal.omniversrol.com" class="btn-portal">ÁREA PRIVADA</a>
     </div>
 
-    <!-- HERO PRINCIPAL -->
+    <!-- HERO PRINCIPAL AMB LOGO INDEPENDENT -->
     <header class="hero">
         <div class="logo-box">
             <img src="logo.png" alt="OmniversRol" class="logo-img">
@@ -26,14 +93,14 @@
         <p class="quote">"Si puedes imaginarla, puedes jugarla."</p>
     </header>
 
-    <!-- QUÉ ES (RESUMIDO) -->
+    <!-- QUÉ ES (COMPACTO) -->
     <section class="block">
         <h2>¿QUÉ ES OMNIVERSROL?</h2>
         <p>Un juego experiencial de exploración y transformación para mirar tu realidad desde nuevas perspectivas.</p>
         <div class="highlight">Aquí no hay ganadores ni perdedores: descubre qué cambia cuando cambias de lugar.</div>
     </section>
 
-    <!-- 4 ELEMENTOS (COMPACTO) -->
+    <!-- 4 ELEMENTOS -->
     <section class="block">
         <h2>4 ELEMENTOS | INFINITAS POSIBILIDADES</h2>
         <ul class="elements">
@@ -45,7 +112,7 @@
         <p class="sub-quote">Y cuando cambias la perspectiva... <span>cambia tu realidad.</span></p>
     </section>
 
-    <!-- LLAMADA A LA ACCIÓN / INSTAGRAM -->
+    <!-- INSTAGRAM BLOCK -->
     <section class="block insta-block">
         <h2>EL JUEGO YA HA COMENZADO</h2>
         <p class="insta-text">Estamos creando el universo OmniversRol. Síguenos en Instagram para ver las pruebas, cartas y avances del proceso.</p>
@@ -53,7 +120,7 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 OMNIVERSROL</p>
+        <p>&copy; 2026 OMNIVERSROL. Todos los derechos reservados.</p>
     </footer>
 
 </body>
