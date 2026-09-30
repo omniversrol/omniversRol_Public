@@ -1,60 +1,163 @@
-/* LOGO COMO FONDO DIFUMINADO EN EL HERO */
-.header-brand {
-    position: relative;
-    max-width: 850px;
-    margin: 0 auto 40px auto;
-    padding: 60px 20px;
-    text-align: center;
-    overflow: hidden;
+/* ESTILOS VÈRTEX — COLOR ARENA */
+:root {
+    --bg-color: #f7f4ee;       /* Fondo color arena de la identidad VÈRTEX */
+    --card-bg: #faf7f2;        /* Tono arena aún más suave para destacar bloques */
+    --accent: #c48b5c;         /* Oro viejo / Terracota */
+    --text-dark: #222222;      /* Texto oscuro nítido */
+    --font-title: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
-/* MARCA DE AGUA EN EL FONDO */
-.logo-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    height: 320px;
-    opacity: 0.12; /* Ajusta la transparencia (0.10 a 0.20) */
-    filter: blur(3px); /* Difuminado místico */
-    z-index: 1;
-    pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px 15px;
+}
+
+/* ÁREA PRIVADA SUPERIOR */
+.top-bar {
+    margin-bottom: 25px;
+}
+
+.btn-portal {
+    color: var(--accent);
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    border: 1px solid var(--accent);
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* HERO & LOGO */
+.hero {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.logo-box {
+    margin-bottom: 15px;
 }
 
 .logo-img {
-    width: 100%;
+    max-width: 120px;
     height: auto;
-    border-radius: 50%; /* Intenta redondear el parche cuadrado */
-}
-
-/* TEXTO FLOTANDO SOBRE EL FONDO */
-.brand-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
+    border-radius: 50%;
 }
 
 .tagline {
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
+    font-family: var(--font-title);
+    font-size: 0.8rem;
     color: var(--accent);
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-weight: 600;
+    margin-bottom: 6px;
+    font-weight: 700;
 }
 
 .main-title {
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    letter-spacing: 1.5px;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
     font-weight: 700;
-    color: #1a1a1a;
 }
 
 .quote {
     font-style: italic;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* BLOQUES COMPACTOS */
+.block {
+    max-width: 480px;
+    margin: 0 auto 30px auto;
+}
+
+h2 {
+    font-family: var(--font-title);
+    color: var(--accent);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-size: 0.88rem;
+    color: #333;
+}
+
+.highlight {
+    background: rgba(196, 139, 92, 0.08);
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* LISTA 4 ELEMENTOS */
+.elements {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.elements li {
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+}
+
+.sub-quote {
+    font-size: 0.82rem;
+    margin-top: 10px;
     color: #555;
-    font-size: 0.92rem;
+}
+
+.sub-quote span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* CAJA INSTAGRAM */
+.insta-block {
+    background: var(--card-bg);
+    padding: 20px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(196, 139, 92, 0.2);
+}
+
+.insta-text {
+    font-size: 0.82rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn-insta {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 0.78rem;
+    padding: 10px 18px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.7rem;
+    color: #888;
 }
