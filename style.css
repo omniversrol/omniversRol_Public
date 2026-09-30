@@ -22,20 +22,12 @@ body {
     padding: 15px 10px;
 }
 
-/* CABECERA I LOGO PETIT */
-.header {
+/* BARRA SUPERIOR */
+.top-bar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.logo-img {
-    max-width: 85px; /* Logo reduït per estalviar espai */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    justify-content: flex-end;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
 }
 
 .btn-portal {
@@ -55,32 +47,69 @@ body {
     color: #fff;
 }
 
-/* SECCIONS I BLOCS COMPACTES */
-.hero, .content-block {
-    max-width: 650px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
+/* CAPÇALERA COMPOSTA (LOGO MÉS GRAN + TEXT AL COSTAT) */
+.header-brand {
+    display: flex;
+    flex-direction: row; /* Posa el logo i el text un al costat de l'altre */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    padding: 10px;
+}
+
+.logo-img {
+    max-width: 130px; /* Logo més gran */
+    height: auto;
+    display: block;
+}
+
+.brand-text {
+    text-align: left; /* Alinea el text al costat del logo */
 }
 
 .tagline {
     font-family: var(--font-heading);
     font-size: 0.85rem;
     color: var(--accent);
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin-bottom: 4px;
 }
 
 .main-title {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
-    margin-bottom: 6px;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
     letter-spacing: 1.5px;
+    font-weight: 700;
 }
 
 .quote {
     font-style: italic;
     color: #666;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
+}
+
+/* EN PANTALLES PETITES / MÒBILS ES POSA UN SOTA L'ALTRE AUTOMÀTICAMENT */
+@media (max-width: 600px) {
+    .header-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+    .brand-text {
+        text-align: center;
+    }
+    .logo-img {
+        max-width: 110px;
+    }
+}
+
+/* BLOCS COMPACTES */
+.content-block {
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
 }
 
 h2 {
@@ -105,7 +134,7 @@ h2 {
     font-size: 0.85rem;
 }
 
-/* LISTES I ELEMENTES */
+/* LLISTES I ELEMENTES */
 .elements-list {
     list-style: none;
     padding: 0;
