@@ -1,4 +1,4 @@
-/* ESTILOS VÈRTEX — COLOR ARENA */
+/* ESTILOS VÈRTEX — COLOR ARENA VÈRTEX */
 :root {
     --bg-color: #f7f4ee;       /* Fondo color arena de la identidad VÈRTEX */
     --card-bg: #faf7f2;        /* Tono arena aún más suave para destacar bloques */
@@ -38,9 +38,15 @@ body {
     padding: 6px 14px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
 }
 
-/* HERO & LOGO */
+.btn-portal:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+/* HERO & LOGO INDEPENDIENTE */
 .hero {
     max-width: 500px;
     margin: 0 auto 30px auto;
@@ -48,12 +54,15 @@ body {
 
 .logo-box {
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-img {
     max-width: 120px;
     height: auto;
     border-radius: 50%;
+    display: block;
 }
 
 .tagline {
@@ -71,6 +80,7 @@ body {
     margin-bottom: 8px;
     letter-spacing: 1px;
     font-weight: 700;
+    color: #1a1a1a;
 }
 
 .quote {
@@ -79,7 +89,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* BLOQUES COMPACTOS */
+/* BLOQUES DE CONTENIDO CENTRADOS */
 .block {
     max-width: 480px;
     margin: 0 auto 30px auto;
@@ -154,6 +164,11 @@ p {
     padding: 10px 18px;
     border-radius: 4px;
     letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-insta:hover {
+    opacity: 0.9;
 }
 
 .footer {
